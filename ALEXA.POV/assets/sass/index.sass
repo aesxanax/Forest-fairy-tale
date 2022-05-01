@@ -1,0 +1,698 @@
+@font-face
+  font-family: "Alegra"
+  src: url(../font/AlegreyaSans-Regular.ttf)
+
+@font-face
+  font-family: "Roboto"
+  src: url(../font/Roboto-Regular.ttf)
+
+@font-face
+  font-family: "Segoe"
+  src: url(../font/segoescript.ttf)
+
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  text-align: center
+  line-height: 1.6
+
+a
+  text-decoration: none
+  color: black
+  transition: color 0.5s
+
+input[type="checkbox"], header nav label, #hide
+  display: none
+
+input[type="checkbox"]:checked + ul
+  display: block
+  z-index: 1000
+
+  #hide
+    display: block
+    z-index: 1000
+
+img
+  border-radius: 20px
+
+header
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 6rem
+  background-color: #a9a9a9
+
+  nav
+    display: flex
+    justify-content: space-around
+    width: 80%
+    align-items: center
+
+    ul
+      display: flex
+      width: 60%
+      justify-content: space-between
+      list-style: none
+      padding: 0
+
+      li
+        font-family: "Alegra"
+        font-size: 1.5rem
+
+        a:hover
+          color: white
+          transition: color 0.5s
+
+#logo, header a img
+  display: block
+  height: 100%
+
+#form
+  color: #F4F4F4
+  padding: 1.2rem 3rem
+  background-color: #271F1F
+  border-radius: 40px
+  font-size: 1.2rem
+  transition: background-color 0.5s
+
+  &:hover
+    background-color: white
+    color: #271F1F
+    transition: all 0.5s
+
+footer
+  display: flex
+  justify-content: space-around
+  background-color: #a9a9a9
+  margin-top: 4rem
+  height: fit-content
+  padding: 1rem 0 0.5rem 0
+
+  address
+    display: flex
+    flex-direction: column
+    width: 30%
+    font-family: "Segoe"
+    figure
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 70%
+      margin: 0 auto
+
+      svg
+        width: 90px
+        height: 90px
+
+        &:hover
+          color: white
+          transition: color 0.5s
+
+      a:hover
+        color: white
+        transition: color 0.5s
+
+    span
+      font-size: 2rem
+
+  nav
+    display: flex
+    flex-direction: column
+    font-family: "Segoe"
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+      font-family: "Alegra"
+
+      li a:hover
+        color: white
+        transition: color 0.5s
+
+#center
+  font-size: 1.4rem
+  justify-content: space-around
+
+  a:hover
+    color: white
+    transition: color 0.5s
+
+  img
+    width: 300px
+
+#right
+  text-align: right
+  width: 30%
+
+#author
+  margin: 0
+  color: white
+  font-size: 1.5rem
+  background-color: #9B9696
+
+body > section
+  height: 100vh
+  background-image: url(../img/girl_and_triangle_house.jpg)
+  background-position: center
+  background-size: cover
+
+  h1
+    display: block
+    font-weight: normal
+    color: white
+    font-family: "Segoe"
+    text-shadow: 2px 0 2px #000, 0 2px 2px #000, -2px 0 2px #000, 0 -2px 2px #000
+    font-size: 9rem
+    margin-top: 3rem
+
+.hotel_info
+  h2
+    font-size: 2rem
+    border-radius: 100%
+    margin: 0 0 1rem 2rem
+    padding: 0 3rem
+    font-weight: 400
+    width: fit-content
+    font-family: "Segoe"
+    background-color: #B8EEE8
+
+  section
+    height: fit-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    font-family: "Segoe"
+
+    figure
+      width: 360px
+      margin: 1rem
+      flex-direction: column
+
+      img
+        width: 100%
+
+      figcaption
+        font-size: 1.7rem
+        background-color: #B8EEE8
+        border-radius: 100%
+
+      &:nth-child(even) figcaption
+        background-color: #DCF0EE
+
+  figure
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+    img
+      margin-bottom: 1rem
+      width: 450px
+
+    div, p
+      text-indent: 2rem
+      font-size: 1.5rem
+      width: 450px
+      margin: 1rem
+
+main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-top: 4rem
+  background-image: url(../img/backk.svg)
+  background-size: cover
+  background-repeat: no-repeat
+
+  h1
+    font-size: 3rem
+    font-family: "Segoe"
+    font-weight: 400
+
+  svg
+    margin: 2rem 0
+    width: 100%
+
+    path
+      fill: transparent
+      stroke: #4D4D4D
+
+  section figure img
+    width: 100%
+
+.sales
+  section
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    width: fit-content
+    margin: auto
+    font-family: "Alegra"
+
+    figure
+      width: 35%
+      margin: 0 1rem 0 0
+      font-size: 0.9rem
+
+      figcaption
+        width: 70%
+        margin: auto
+
+    div
+      ul, h3
+        list-style-type: none
+        margin: 0
+
+      ul li::before
+        content: "-"
+
+    div
+      width: 35%
+      font-size: 1.5rem
+      margin-left: 1rem
+      text-align: left
+
+      p
+        text-indent: 2rem
+
+  h2, h3
+    list-style-type: none
+    margin: 0
+
+.houses
+  > h1
+    margin: 0
+    height: 6rem
+    padding: 2rem
+    font-size: 4rem
+    background-image: url(../img/green_mess-PhotoRoom.png)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+
+  section
+    margin: auto
+    display: flex
+    width: 90%
+    justify-content: space-around
+    flex-wrap: wrap
+
+    h2
+      width: 100%
+      font-size: 3rem
+      font-family: "Segoe"
+      font-weight: normal
+
+    > div
+      margin: 0
+      height: fit-content
+      width: 40%
+      text-align: left
+
+    figure
+      width: 50%
+      margin: 0
+
+      div
+        border-radius: 20px
+        width: 100%
+        height: 75%
+        background-size: cover
+
+      figcaption
+        width: 70%
+        margin: 0 2rem
+        font-family: "Segoe"
+        text-align: right
+
+    div
+      ul, span
+        font-family: "Alegra"
+        font-size: 1.5rem
+        margin: 0
+
+      a
+        display: block
+        font-family: "Segoe"
+        padding: 3rem 2rem
+        width: fit-content
+        font-size: 1.6rem
+        background-image: url(../img/green_mess-PhotoRoom.png)
+        background-size: contain
+        transition: color 0.5s
+
+        &:hover
+          transition: color 0.5s
+          color: white
+
+      .price
+        font-size: 2rem
+
+#family
+  width: 50%
+  margin: 0
+
+#horoms
+  animation: back_horoms 30s ease-in-out infinite alternate
+
+#izba
+  animation: back_izba 30s ease-in-out infinite alternate
+
+#sauna
+  animation: back_sauna 30s ease-in-out infinite alternate
+
+#terem
+  animation: back_terem 30s ease-in-out infinite alternate
+
+#moredom
+  animation: back_moredom 30s ease-in-out infinite alternate
+
+@keyframes back_horoms
+  0%
+    background-image: url(../img/horoms.jpg)
+
+  5%
+
+  20%
+
+  25%
+    background-image: url(../img/hor_bed.jpg)
+
+  30%
+
+  45%
+
+  50%
+    background-image: url(../img/hor_hole.jpg)
+
+  55%
+
+  70%
+
+  75%
+    background-image: url(../img/hor_kitchen.jpg)
+
+  80%
+
+  95%
+
+  100%
+    background-image: url(../img/hor_bath.jpg)
+
+@keyframes back_izba
+  0%
+    background-image: url(../img/izba.jpg)
+
+  5%
+
+  20%
+
+  25%
+    background-image: url(../img/izba_hole.jpg)
+
+  30%
+
+  45%
+
+  50%
+    background-image: url(../img/izba_hol_e.jpg)
+
+  55%
+
+  70%
+
+  75%
+    background-image: url(../img/izba_bed.jpg)
+
+  80%
+
+  95%
+
+  100%
+    background-image: url(../img/izba_kitchen.jpg)
+
+@keyframes back_moredom
+  0%
+    background-image: url(../img/moredom.png)
+
+  5%
+
+  20%
+
+  25%
+    background-image: url(../img/more_bed.jpg)
+
+  30%
+
+  45%
+
+  50%
+    background-image: url(../img/more_hole.jpg)
+
+  55%
+
+  70%
+
+  75%
+    background-image: url(../img/more_kitchen.jpg)
+
+  80%
+
+  95%
+
+  100%
+    background-image: url(../img/more_bath.jpg)
+
+@keyframes back_terem
+  0%
+    background-image: url(../img/terem.jpg)
+
+  5%
+
+  20%
+
+  25%
+    background-image: url(../img/terem_bed.jpg)
+
+  30%
+
+  45%
+
+  50%
+    background-image: url(../img/terem_mir.jpg)
+
+  55%
+
+  70%
+
+  75%
+    background-image: url(../img/terem_kitchen.jpg)
+
+  80%
+
+  95%
+
+  100%
+    background-image: url(../img/terem_bath.jpg)
+
+@keyframes back_sauna
+  0%
+    background-image: url(../img/sauna.jpg)
+
+  5%
+
+  20%
+
+  25%
+    background-image: url(../img/sau_hole.jpg)
+
+  30%
+
+  45%
+
+  50%
+    background-image: url(../img/sau_mir.jpg)
+
+  55%
+
+  70%
+
+  75%
+    background-image: url(../img/sau_fire.jpg)
+
+  80%
+
+  95%
+
+  100%
+    background-image: url(../img/sau_sau.jpg)
+
+form
+  margin: auto
+  width: 50%
+  background-color: #C4C4C4
+  border-radius: 40px
+  font-family: "Alegra"
+
+  p
+    margin: 3rem 0
+
+  label
+    text-align: right
+    width: 40%
+    float: left
+    margin: 0 1rem
+    font-size: 1.7rem
+
+  input
+    background-color: white
+    width: 40%
+    font-size: 1.5rem
+    border: none
+    padding: 0.5rem
+    height: 30px
+    border-radius: 50px
+
+    &[type="submit"]
+      height: 150px
+      background-image: url(../img/green_mess-PhotoRoom.png)
+      background-position: center
+      background-size: contain
+      background-color: transparent
+      background-repeat: no-repeat
+      font-family: "Segoe"
+      transition: color 0.5s
+      font-size: 1.9rem
+
+      &:hover
+        color: white
+        transition: color 0.5s
+
+@media screen and (max-width: 1024px)
+  .houses section
+    > div
+      margin: auto
+      width: 90%
+
+    figure
+      margin: auto
+      width: 90%
+      height: 600px
+
+  .hotel_info figure
+    div, p, img
+      width: 350px
+      font-size: 1.2rem
+
+  footer address figure svg
+    width: 60px
+    height: 60px
+
+  form
+    width: 70%
+    margin: auto
+
+  .sales section
+    figure
+      width: 70%
+      margin: auto
+
+      figcaption
+        width: 70%
+        margin: auto
+
+    div
+      width: 70%
+      margin: auto
+
+  #family
+    width: 80%
+
+@media screen and (max-width: 768px)
+  body > section h1
+    font-size: 8rem
+
+  .houses section figure
+    height: 500px
+
+  header
+    nav
+      justify-content: right
+      height: 100%
+      width: 60%
+
+      label
+        display: block
+        height: 80%
+        width: 30%
+
+        svg
+          width: 100%
+          height: 100%
+          text-align: center
+
+      ul
+        display: none
+        background-color: #a9a9a9
+        opacity: 0.9
+        border-radius: 0 0 0 10px
+        top: 5rem
+        right: 0
+        color: white
+        text-align: right
+        width: fit-content
+        position: absolute
+
+        li a
+          color: white
+          padding: 1rem
+
+          justify-content: space-between
+          padding: 0 1rem
+
+  #form, #center
+    display: none
+
+  footer
+    flex-direction: column
+    justify-content: center
+
+    address
+      width: 100%
+      height: 100%
+      text-align: center
+
+    address figure svg
+      width: 110px
+      height: 110px
+
+  #right
+    width: 100%
+    height: 100%
+    text-align: center
+
+  form
+    label, input
+      width: 70%
+      margin: auto
+      text-align: center
+
+    label
+      margin: 0 3rem
+
+    input[type="submit"]
+      font-size: 1.3rem
+
+@media screen and (max-width: 425px)
+  body > section h1
+    font-size: 7rem
+
+  .houses section figure
+    height: 400px
+
+  .hotel_info h2
+    text-align: center
+    margin: auto
